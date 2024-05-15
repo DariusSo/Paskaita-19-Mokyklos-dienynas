@@ -73,7 +73,7 @@ public class Main {
         school.addStudent(student10);
         school.addStudent(student11);
 
-        school.calculateAverage("studentas1");
+        school.calculateAverage("studentas15");
         school.printStudentGrades("studentas1");
         school.printTOP10Students();
         System.out.println();

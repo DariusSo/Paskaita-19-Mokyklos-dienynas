@@ -46,16 +46,24 @@ public class School {
                 return average;
             }
         }
+        if (suma == 0){
+            System.out.println("Toks studentas nerastas.");
+        }
         return 0;
     }
     public void printStudentGrades(String name){
+        boolean flag = false;
         for (int i = 0; i < students.length; i++) {
             if (students[i].name.equals(name)) {
+                flag = true;
                 System.out.println(name + " pazymiai yra:");
                 for (int j = 0; j < students[i].grades.length; j++) {
                     System.out.println(students[i].grades[j]);
                 }
             }
+        }
+        if (flag = false){
+            System.out.println("Toks studentas nerastas.");
         }
     }
     public void printTOP10Students(){
